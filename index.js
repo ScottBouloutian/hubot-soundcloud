@@ -11,7 +11,7 @@ module.exports = robot => {
     const config = fs.readFileSync(configPath, {
         encoding: 'utf-8'
     });
-    const soundSync = new SoundSync(config);
+    const soundSync = new SoundSync(JSON.parse(config));
     let inProgress = false;
 
     robot.respond(/soundcloud backup/, msg => {
