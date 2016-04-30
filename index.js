@@ -1,3 +1,5 @@
+'use strict';
+
 const SoundSync = require('sound-sync');
 const fs = require('fs');
 
